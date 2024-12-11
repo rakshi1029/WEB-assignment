@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Management Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dairy Management Registration Form</h1>
+        <form id="DairyForm" action="display.php" method="POST">
+            
+<label for="earTagNumber">Ear Tag Number:</label>
+      <input type="text" id="earTagNumber" name="earTagNumber" required>
+
+           <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+
+           <label for="breed">Breed:</label>
+      <select id="breed" name="breed" required>
+        <option value="">Select Breed</option>
+        <option value="Holstein Friesian">Holstein Friesian</option>
+        <option value="Brown Swiss">Brown Swiss</option>
+        <option value="Jersey">Jersey</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Gir">Gir</option>
+        <option value="Congreg">Congreg</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="age">Age (Months):</label>
+      <input type="text" id="age" name="age" required>
+
+      <label for="color">Color:</label>
+      <select id="color" name="color" required>
+        <option value="">Select Color</option>
+        <option value="Pure Black">Pure Black</option>
+        <option value="Pure White">Pure White</option>
+        <option value="Pure Brown">Pure Brown</option>
+        <option value="Black and White">Black and White</option>
+        <option value="Brown and White">Brown and White</option>
+        <option value="Grey">Grey</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="milkingCapacity">Milking Capacity (Liters/Day):</label>
+      <select id="milkingCapacity" name="milkingCapacity" required>
+        <option value="">Select Capacity</option>
+        <option value="3-5">3-5</option>
+        <option value="6-10">6-10</option>
+        <option value="10-15">10-15</option>
+        <option value="16-20">16-20</option>
+        <option value="20-30">20-30</option>
+        <option value="30+">30+</option>
+      </select>
+
+      <label for="monthOfSemen">Month of Semen:</label>
+      <input type="text" id="monthOfSemen" name="monthOfSemen" required>
+
+      <label for="semenBreed">Semen's Breed:</label>
+      <select id="semenBreed" name="semenBreed" required>
+        <option value="">Select Breed</option>
+        <option value="Holstein Friesian">Holstein Friesian</option>
+        <option value="Brown Swiss">Brown Swiss</option>
+        <option value="Jersey">Jersey</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Gir">Gir</option>
+        <option value="Congreg">Congreg</option>
+        <option value="Other">Other</option>
+      </select>
+
+
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="submit" id="submitBtn">Clear</button>
+        </form>
+    </div>
+</body>
+</html>
